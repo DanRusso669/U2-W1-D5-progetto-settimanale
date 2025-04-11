@@ -8,8 +8,38 @@ body {
   font-family: "Spectral", serif;
 }
 
+.upperButtons {
+  background-color: black;
+  color: white;
+  height: 30px;
+  min-width: 100px;
+  border-radius: 35px;
+}
+
+#giallo {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+  height: 342px;
+}
+
+.scrolled {
+  background-color: white;
+}
+
+.scrolled1 {
+  background-color: #1a8917;
+}
+
 header {
   background-color: #ffc017;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background-color 1s ease;
+}
+
+#signin {
+  transition: background-color 1s ease;
 }
 
 .marginContainer {
@@ -32,13 +62,7 @@ nav div {
   display: flex;
   justify-content: space-between;
   gap: 0px 21px;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  background-color: black;
-  width: 130%;
+  align-items: center;
 }
 
 #hero h1 {
@@ -56,6 +80,9 @@ hr {
   height: 342px;
   width: 435px;
   object-fit: cover;
+  position: absolute;
+  right: 30px;
+  z-index: 2;
 }
 
 #heroText {
@@ -64,6 +91,7 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  gap: 22px 10px;
 }
 
 #heroText p {
@@ -84,6 +112,8 @@ h2 {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 h2 img {
@@ -118,7 +148,7 @@ h4 {
 }
 
 .news {
-  width: 33.333%;
+  width: 29%;
   height: 75px;
   display: flex;
   justify-content: flex-start;
@@ -137,6 +167,8 @@ h4 {
   font-family: "Spectral", serif;
   font-weight: 700;
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .newsArticle p:last-of-type {
@@ -156,7 +188,7 @@ h4 {
   line-height: 19px;
 }
 
-.Tom {
+.circle {
   vertical-align: middle;
   margin-right: 5px;
   width: 23px;
@@ -164,7 +196,7 @@ h4 {
   border-radius: 50%;
 }
 
-.Jerry {
+.square {
   vertical-align: middle;
   margin-right: 5px;
   width: 23px;
@@ -177,10 +209,12 @@ h4 {
   flex-wrap: wrap;
   height: 260px;
   margin-bottom: 1rem;
+  gap: 0px 80px;
 }
 
 #pippo {
   display: flex;
+  align-items: flex-start;
   margin-block: 4rem 2rem;
 }
 
@@ -188,7 +222,7 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 130vh;
+  height: 140vh;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -197,7 +231,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   max-height: 140px;
-  max-width: 770px;
+  max-width: 810px;
 }
 
 .columnImg {
@@ -217,6 +251,8 @@ h4 {
   font-family: "Spectral", serif;
   font-weight: 700;
   font-style: normal;
+  display: flex;
+  align-items: center;
 }
 
 .columnArticleText p:nth-last-of-type(2) {
@@ -238,4 +274,63 @@ h4 {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   color: gray;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-variation-settings: "wdth" 100;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.button {
+  height: 35px;
+  max-width: 150px;
+  border: 0.5px solid lightgray;
+  color: gray;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px;
+}
+
+#search {
+  width: 40%;
+  padding-left: 6rem;
+  position: sticky;
+  top: 110px;
+  background-color: white;
+  z-index: 10;
+}
+
+#buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  max-width: 450px;
+  margin-top: 1rem;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 3rem;
+}
+
+#helpContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  gap: 11px 23px;
+  margin-top: 2rem;
+}
+
+.help {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  color: 191919;
 }
