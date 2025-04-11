@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffc017;
+}
+
+.marginContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.borderBreak {
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem 0.5rem;
+}
+nav div {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 130%;
+}
+
+#hero h1 {
+  font-weight: 500;
+  font-family: "Spectral", serif;
+  font-size: 90px;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hero img {
+  height: 342px;
+  width: 435px;
+  object-fit: cover;
+}
+
+#heroText {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+#heroText p {
+  max-width: 290px;
+}
+
+h2 {
+  margin-block: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 14px;
+}
+
+h2 img {
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+h3 {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.news {
+  width: 33%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0px 19px;
+}
+
+.newsArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.newsArticle p:first-of-type {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.newsArticle p:last-of-type {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(107, 107, 107);
+}
+
+.newsNumber {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: lightgray;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+#Tom {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+
+.articlesSlot {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
